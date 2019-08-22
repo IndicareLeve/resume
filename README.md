@@ -1,7 +1,7 @@
 # resume
-My resume, largely sourced and inspired from [Awesome CV](https://github.com/posquit0/Awesome-CV).
+My resume, based on the template by [junhaodong](https://github.com/junhaodong/resume), with few little addictions.
 
-View the [PDF](https://raw.githubusercontent.com/junhaodong/resume/master/resume.pdf).
+View the [PDF](https://raw.githubusercontent.com/danielecervi/resume/master/resume.pdf).
 
 <div align="center">
   <img alt="Résumé" src="https://raw.githubusercontent.com/junhaodong/resume/master/resume.png" width="70%" />
@@ -9,5 +9,3 @@ View the [PDF](https://raw.githubusercontent.com/junhaodong/resume/master/resume
 
 ## Quick Start
 Feel free to modify my `.tex` file to create your own resume. Please don't use my resume for anything else without my permission, though!
-
-* [**Edit Résumé on OverLeaf.com**](https://www.overleaf.com/latex/templates/resume-template/ysrmnrwyrhpp)

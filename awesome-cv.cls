@@ -266,6 +266,14 @@
 % Usage: \mobile{<mobile number>}
 \newcommand*{\mobile}[1]{\def\@mobile{#1}}
 
+% Defines writer's hometown (optional)
+% Usage: \hometown{<hometown>}
+\newcommand*{\hometown}[1]{\def\@hometown{#1}}
+
+% Defines writer's birthdate (optional)
+% Usage: \birthdate{<birthdate>}
+\newcommand*{\birthdate}[1]{\def\@birthdate{#1}}
+
 % Defines writer's email (optional)
 % Usage: \email{<email adress>}
 \newcommand*{\email}[1]{\def\@email{#1}}
@@ -392,11 +400,23 @@
     \headersocialstyle{%
       \newbool{isstart}%
       \setbool{isstart}{true}%
+      \ifthenelse{\isundefined{\@birthdate}}%
+        {}%
+        {%
+          {\faBirthdayCake\acvHeaderIconSep\@birthdate}%
+          \setbool{isstart}{false}%
+        }%
+      \ifthenelse{\isundefined{\@hometown}}%
+        {}%
+        {%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+          \faHome\acvHeaderIconSep\@hometown%
+        }%
       \ifthenelse{\isundefined{\@mobile}}%
         {}%
         {%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \faPhone\acvHeaderIconSep\@mobile%
-          \setbool{isstart}{false}%
         }%
       \ifthenelse{\isundefined{\@email}}%
         {}%
