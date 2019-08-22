@@ -3,9 +3,5 @@ My resume, based on the template by [junhaodong](https://github.com/junhaodong/r
 
 View the [PDF](https://raw.githubusercontent.com/danielecervi/resume/master/resume.pdf).
 
-<div align="center">
-  <img alt="Résumé" src="https://raw.githubusercontent.com/junhaodong/resume/master/resume.png" width="70%" />
-</div>
-
 ## Quick Start
 Feel free to modify my `.tex` file to create your own resume. Please don't use my resume for anything else without my permission, though!
